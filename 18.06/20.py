@@ -1,0 +1,10 @@
+with open('24_180622.txt') as f:
+    data = f.read().rstrip()
+    data = data.replace('AA', '*').replace('CC', '*')
+    data = data.replace('AA', '*').replace('CC', '*')
+    data = data.replace('AA', '*').replace('CC', '*')
+    data = data.replace('A', ' ').replace('B', ' ').replace('C', ' ')
+    data = data.replace('A', ' ').replace('B', ' ').replace('C', ' ')
+    data = data.replace('A', ' ').replace('B', ' ').replace('C', ' ')
+    data = data.split()
+    print(len(max(data, key=len)))
